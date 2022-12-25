@@ -8,9 +8,11 @@
     <style>
       .el--1 {
         background-color: blueviolet;
+        align-self: flex-end;
       }
       .el--2 {
         background-color: orangered;
+        align-self: flex-start;
       }
       .el--3 {
         background-color: green;
@@ -30,6 +32,7 @@
       }
       .el--8 {
         background-color: crimson;
+        order: -1;
       }
 
       .container {
@@ -99,9 +102,13 @@
       .flex-10 {
         background-color: #c44;
       }
+      .el {
+        margin: 10px;
+      }
     </style>
   </head>
   <body>
+    <button><a href="index.html">back to html</a></button>
     <div class="container--1">
       <div class="el flex-1">hello</div>
       <div class="el flex-2">wonderful</div>
