@@ -34,9 +34,9 @@ nav {
   /* text-align: center; */
 }
 
-article {
+/* article {
   margin-bottom: 60px;
-}
+} */
 
 .post-header {
   margin-bottom: 40px;
@@ -291,11 +291,12 @@ nav{
   display: flex;
   align-items: flex-start;
   gap: 75px;
+  margin-bottom: 60px;
 }
 
 aside {
   flex: 0 0 300px;
 }
 article {
-  flex:0 0 825px;
+  flex:1;
 }
