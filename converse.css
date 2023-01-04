@@ -21,6 +21,7 @@ body {
   background-color: #f7f7f7;
   padding: 15px;
   margin-top: 0;
+  grid-column: 1/-1;
 }
 .price {
   font-size: 24px;
@@ -69,7 +70,7 @@ p {
 button {
   background-color: #000;
   color: #ffff;
-  height: 30px;
+  height: 50px;
   width: 100%;
   font-weight: bold;
   text-transform: uppercase;
@@ -149,11 +150,20 @@ h2::before {
   gap: 70px;
   margin-top: 25px;
 }
-.row {
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 37.5px;
+}
+button {
+  grid-column: 1/-1;
+  height: ;
+}
+/* .row {
   display: flex;
   gap: 37.5px;
-}
-.product-img {
+} */
+/* .product-img {
   flex: 0 0 250px;
 }
 .row-one {
@@ -161,4 +171,4 @@ h2::before {
 }
 .row-two {
   flex: 1;
-}
+} */
