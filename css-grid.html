@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Grid</title>
+
+    <button link href="index.html">GO back to html</button>
     <style>
       .el--1 {
         background-color: blueviolet;
@@ -30,34 +32,55 @@
       }
       .el--8 {
         background-color: crimson;
+        /* border-radius: 125px; */
       }
 
-      .container--1 {
+      .container--1{
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
         font-size: 40px;
         margin: 40px;
-
-        /* CSS GRID */
+        display: none;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 25px;
+        row-gap: 25px;
       }
+      /* .el--8{
+              grid-column:2/3 ;
+              grid-row: 1/2;}
+      .el--5{
+              grid-column: 4/5;
+              grid-row: 1/2;}
 
-      .container--2 {
-        /* STARTER */
+      .el--2 {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+      grid-row: 1/span 2;} */
+
+
+      .container--2{
         font-family: sans-serif;
-        background-color: black;
+        background-color:;
         font-size: 40px;
-        margin: 100px;
-
-        width: 1000px;
-        height: 600px;
-
-        /* CSS GRID */
+        margin-top: 25px;
+        margin-left: 50px;
+        /* width: 1000px; */
+        /* height: 600px; */
+        display:grid;
+        /* grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
       }
+ /* STARTER */
+ 
+      }
+       
     </style>
   </head>
   <body>
-    <div class="container--1">
+    <!-- <div class="container--1">
       <div class="el el--1">(1) HTML</div>
       <div class="el el--2">(2) and</div>
       <div class="el el--3">(3) CSS</div>
@@ -66,15 +89,21 @@
       <div class="el el--6">(6) languages</div>
       <div class="el el--7">(7) to</div>
       <div class="el el--8">(8) learn</div>
-    </div>
+    </div> -->
+
+
 
     <div class="container--2">
       <div class="el el--1">(1)</div>
+      <div class="el el--2">(2)</div>
       <div class="el el--3">(3)</div>
       <div class="el el--4">(4)</div>
       <div class="el el--5">(5)</div>
       <div class="el el--6">(6)</div>
       <div class="el el--7">(7)</div>
+      <!-- <div class="el el--8">(8)</div> -->
     </div>
+  </body>
+</html>
   </body>
 </html>
